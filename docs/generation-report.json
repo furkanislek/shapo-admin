@@ -1,0 +1,69 @@
+{
+  "engineVersion": "1.0.0",
+  "report": [
+    {
+      "board": "rectangle",
+      "pieceSet": "studio-rectangle",
+      "seed": "demo-rectangle-2026",
+      "attempts": 3,
+      "rejected": {
+        "Adayın tahmini hattı medium; hedef baby. Sabit parça hedefini değiştirin.": 1,
+        "Adayın tahmini hattı medium; hedef easy. Sabit parça hedefini değiştirin.": 1
+      },
+      "accepted": 1,
+      "fixedCount": 3,
+      "track": "medium",
+      "score": 41,
+      "nodes": 4,
+      "elapsedMs": 95.821
+    },
+    {
+      "board": "cat",
+      "pieceSet": "studio-cat",
+      "seed": "demo-cat-2026",
+      "attempts": 3,
+      "rejected": {
+        "Adayın tahmini hattı medium; hedef baby. Sabit parça hedefini değiştirin.": 1,
+        "Adayın tahmini hattı medium; hedef easy. Sabit parça hedefini değiştirin.": 1
+      },
+      "accepted": 1,
+      "fixedCount": 3,
+      "track": "medium",
+      "score": 39,
+      "nodes": 4,
+      "elapsedMs": 46.92316699999998
+    },
+    {
+      "board": "dog",
+      "pieceSet": "studio-dog",
+      "seed": "demo-dog-2026",
+      "attempts": 2,
+      "rejected": {
+        "Adayın tahmini hattı easy; hedef baby. Sabit parça hedefini değiştirin.": 1
+      },
+      "accepted": 1,
+      "fixedCount": 3,
+      "track": "easy",
+      "score": 38,
+      "nodes": 4,
+      "elapsedMs": 26.27554200000003
+    },
+    {
+      "board": "heart",
+      "pieceSet": "studio-heart",
+      "seed": "demo-heart-2026",
+      "attempts": 3,
+      "rejected": {
+        "Adayın tahmini hattı medium; hedef baby. Sabit parça hedefini değiştirin.": 1,
+        "Adayın tahmini hattı medium; hedef easy. Sabit parça hedefini değiştirin.": 1
+      },
+      "accepted": 1,
+      "fixedCount": 3,
+      "track": "medium",
+      "score": 40,
+      "nodes": 4,
+      "elapsedMs": 73.189459
+    }
+  ],
+  "verifiedLevels": 4
+}

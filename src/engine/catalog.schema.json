@@ -1,0 +1,564 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "game": {
+      "const": "shape-packing-2d"
+    },
+    "catalogId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "catalogRevision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "engineVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "coordinateSystem": {
+      "const": "xy-zero-based"
+    },
+    "pieceSets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pieceSet"
+      },
+      "minItems": 1,
+      "maxItems": 1000
+    },
+    "tracks": {
+      "type": "object",
+      "properties": {
+        "baby": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        },
+        "easy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        },
+        "medium": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        },
+        "hard": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        },
+        "expert": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 1000
+        }
+      },
+      "required": ["baby", "easy", "medium", "hard", "expert"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "game",
+    "catalogId",
+    "catalogRevision",
+    "engineVersion",
+    "coordinateSystem",
+    "pieceSets",
+    "tracks"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:shape-puzzle-studio:catalog:1",
+  "$defs": {
+    "cell": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "piece": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "symbol": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 3
+        },
+        "cells": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cell"
+          },
+          "minItems": 1,
+          "maxItems": 100
+        }
+      },
+      "required": ["id", "color", "symbol", "cells"],
+      "additionalProperties": false
+    },
+    "pieceSet": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "allowRotations": {
+          "type": "boolean"
+        },
+        "allowReflections": {
+          "type": "boolean"
+        },
+        "pieces": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/piece"
+          },
+          "minItems": 1,
+          "maxItems": 30
+        }
+      },
+      "required": ["id", "version", "pieces"],
+      "additionalProperties": false
+    },
+    "board": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "mask": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[01]{1,20}$"
+          },
+          "minItems": 1,
+          "maxItems": 20
+        },
+        "templateId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "shapeLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": ["width", "height", "mask"],
+      "additionalProperties": false
+    },
+    "placement": {
+      "type": "object",
+      "properties": {
+        "pieceId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "orientationKey": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "origin": {
+          "$ref": "#/$defs/cell"
+        },
+        "cells": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cell"
+          },
+          "minItems": 1,
+          "maxItems": 100
+        }
+      },
+      "required": ["pieceId", "orientationKey", "origin", "cells"],
+      "additionalProperties": false
+    },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "allowRotations": {
+          "type": "boolean"
+        },
+        "allowReflections": {
+          "type": "boolean"
+        },
+        "solutionPolicy": {
+          "enum": ["unique", "any-valid"]
+        }
+      },
+      "required": ["allowRotations", "allowReflections", "solutionPolicy"],
+      "additionalProperties": false
+    },
+    "settings": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "enum": ["automatic-1", "automatic-2", "silhouette-1"]
+        },
+        "packingSeed": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "pieceCount": {
+          "type": "integer",
+          "minimum": 8,
+          "maximum": 30
+        },
+        "fixedMin": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "fixedMax": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "seed": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "fixedCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "nodeLimit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000000
+        },
+        "attemptLimit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "timeLimit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 300000
+        },
+        "policy": {
+          "enum": ["unique", "any-valid"]
+        },
+        "track": {
+          "enum": ["baby", "easy", "medium", "hard", "expert"]
+        }
+      },
+      "required": [
+        "seed",
+        "fixedCount",
+        "nodeLimit",
+        "attemptLimit",
+        "timeLimit",
+        "policy",
+        "track"
+      ],
+      "additionalProperties": false
+    },
+    "stats": {
+      "type": "object",
+      "properties": {
+        "nodes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "backtracks": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "forcedMoves": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "branchingPoints": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "maxDepth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "elapsedMs": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "nodes",
+        "backtracks",
+        "forcedMoves",
+        "branchingPoints",
+        "maxDepth",
+        "elapsedMs"
+      ],
+      "additionalProperties": false
+    },
+    "difficulty": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "enum": ["baby", "easy", "medium", "hard", "expert"]
+        },
+        "estimatedScore": {
+          "type": "number",
+          "minimum": 0
+        },
+        "metricsVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "metrics": {
+          "type": "object",
+          "properties": {
+            "nodes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "backtracks": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "forcedMoves": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "branchingPoints": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "maxDepth": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "elapsedMs": {
+              "type": "number",
+              "minimum": 0
+            },
+            "initialPlacements": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "rotationDiversity": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "reflectionEnabled": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "nodes",
+            "backtracks",
+            "forcedMoves",
+            "branchingPoints",
+            "maxDepth",
+            "elapsedMs"
+          ],
+          "additionalProperties": false
+        },
+        "manualLabel": {
+          "enum": ["baby", "easy", "medium", "hard", "expert"]
+        }
+      },
+      "required": ["label", "estimatedScore", "metricsVersion", "metrics"],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": ["complete", "timeout", "cancelled", "node_limit"]
+        },
+        "solutionCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "countIsExact": {
+          "type": "boolean"
+        },
+        "classification": {
+          "enum": ["unsolvable", "unique", "multiple", "unknown"]
+        },
+        "symmetryPolicy": {
+          "const": "board-symmetries-count-separately"
+        },
+        "engineVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "status",
+        "solutionCount",
+        "countIsExact",
+        "classification",
+        "symmetryPolicy",
+        "engineVersion"
+      ],
+      "additionalProperties": false
+    },
+    "level": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "kind": {
+          "enum": ["rectangle", "silhouette"]
+        },
+        "pieceSetId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "pieceSetVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pieceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 256
+          },
+          "minItems": 1,
+          "maxItems": 30
+        },
+        "board": {
+          "$ref": "#/$defs/board"
+        },
+        "rules": {
+          "$ref": "#/$defs/rules"
+        },
+        "fixedPlacements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/placement"
+          },
+          "minItems": 0,
+          "maxItems": 30
+        },
+        "referenceSolution": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/placement"
+          },
+          "minItems": 0,
+          "maxItems": 30
+        },
+        "generation": {
+          "$ref": "#/$defs/settings"
+        },
+        "difficulty": {
+          "$ref": "#/$defs/difficulty"
+        },
+        "validation": {
+          "$ref": "#/$defs/validation"
+        },
+        "revisionHistory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/level"
+          },
+          "minItems": 0,
+          "maxItems": 100
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "order",
+        "kind",
+        "pieceSetId",
+        "pieceSetVersion",
+        "pieceIds",
+        "board",
+        "rules",
+        "fixedPlacements",
+        "generation",
+        "difficulty",
+        "validation"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

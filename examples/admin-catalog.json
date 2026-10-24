@@ -1,0 +1,2166 @@
+{
+  "schemaVersion": 1,
+  "game": "shape-packing-2d",
+  "catalogId": "shape-studio",
+  "catalogRevision": 5,
+  "engineVersion": "1.0.0",
+  "coordinateSystem": "xy-zero-based",
+  "pieceSets": [
+    {
+      "id": "studio-rectangle",
+      "version": 1,
+      "allowRotations": true,
+      "allowReflections": false,
+      "pieces": [
+        {
+          "id": "A",
+          "symbol": "A",
+          "color": "#849979",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "id": "B",
+          "symbol": "B",
+          "color": "#d4a05c",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "C",
+          "symbol": "C",
+          "color": "#a18eb3",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "D",
+          "symbol": "D",
+          "color": "#cb7d69",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "E",
+          "symbol": "E",
+          "color": "#729da9",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "F",
+          "symbol": "F",
+          "color": "#c4b45f",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio-cat",
+      "version": 1,
+      "allowRotations": true,
+      "allowReflections": false,
+      "pieces": [
+        {
+          "id": "A",
+          "symbol": "A",
+          "color": "#849979",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "B",
+          "symbol": "B",
+          "color": "#d4a05c",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "C",
+          "symbol": "C",
+          "color": "#a18eb3",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "D",
+          "symbol": "D",
+          "color": "#cb7d69",
+          "cells": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "E",
+          "symbol": "E",
+          "color": "#729da9",
+          "cells": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "id": "F",
+          "symbol": "F",
+          "color": "#c4b45f",
+          "cells": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio-dog",
+      "version": 1,
+      "allowRotations": true,
+      "allowReflections": false,
+      "pieces": [
+        {
+          "id": "A",
+          "symbol": "A",
+          "color": "#849979",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "B",
+          "symbol": "B",
+          "color": "#d4a05c",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "C",
+          "symbol": "C",
+          "color": "#a18eb3",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "D",
+          "symbol": "D",
+          "color": "#cb7d69",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "E",
+          "symbol": "E",
+          "color": "#729da9",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "F",
+          "symbol": "F",
+          "color": "#c4b45f",
+          "cells": [
+            [
+              5,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "studio-heart",
+      "version": 1,
+      "allowRotations": true,
+      "allowReflections": false,
+      "pieces": [
+        {
+          "id": "A",
+          "symbol": "A",
+          "color": "#849979",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "B",
+          "symbol": "B",
+          "color": "#d4a05c",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "id": "C",
+          "symbol": "C",
+          "color": "#a18eb3",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "D",
+          "symbol": "D",
+          "color": "#cb7d69",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "id": "E",
+          "symbol": "E",
+          "color": "#729da9",
+          "cells": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "id": "F",
+          "symbol": "F",
+          "color": "#c4b45f",
+          "cells": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "tracks": {
+    "baby": [],
+    "easy": [
+      {
+        "id": "level-1052990a",
+        "revision": 1,
+        "order": 1,
+        "kind": "silhouette",
+        "pieceSetId": "studio-dog",
+        "pieceSetVersion": 1,
+        "pieceIds": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "board": {
+          "width": 9,
+          "height": 6,
+          "mask": [
+            "010000000",
+            "111100001",
+            "111111111",
+            "011111110",
+            "001111110",
+            "001100110"
+          ],
+          "templateId": "dog",
+          "shapeLabel": "Köpek"
+        },
+        "rules": {
+          "allowRotations": true,
+          "allowReflections": false,
+          "solutionPolicy": "unique"
+        },
+        "fixedPlacements": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;0,1",
+            "origin": [
+              7,
+              3
+            ],
+            "cells": [
+              [
+                7,
+                3
+              ],
+              [
+                7,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "0,0;1,0;2,0;0,1;1,1",
+            "origin": [
+              2,
+              4
+            ],
+            "cells": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "1,0;2,0;0,1;1,1;2,1;0,2;1,2",
+            "origin": [
+              1,
+              1
+            ],
+            "cells": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "referenceSolution": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;0,1",
+            "origin": [
+              7,
+              3
+            ],
+            "cells": [
+              [
+                7,
+                3
+              ],
+              [
+                7,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "0,0;1,0;2,0;0,1;1,1",
+            "origin": [
+              2,
+              4
+            ],
+            "cells": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "1,0;2,0;0,1;1,1;2,1;0,2;1,2",
+            "origin": [
+              1,
+              1
+            ],
+            "cells": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "pieceId": "F",
+            "orientationKey": "5,0;1,1;2,1;3,1;4,1;5,1;0,2;1,2;2,2;3,2;2,3",
+            "origin": [
+              3,
+              1
+            ],
+            "cells": [
+              [
+                8,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                8,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "B",
+            "orientationKey": "0,0;0,1;1,1",
+            "origin": [
+              6,
+              4
+            ],
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                7,
+                5
+              ]
+            ]
+          },
+          {
+            "pieceId": "C",
+            "orientationKey": "1,0;0,1;1,1;0,2",
+            "origin": [
+              0,
+              0
+            ],
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          }
+        ],
+        "generation": {
+          "seed": "demo-dog-2026",
+          "fixedCount": 3,
+          "nodeLimit": 500000,
+          "attemptLimit": 30,
+          "timeLimit": 30000,
+          "policy": "unique",
+          "track": "easy"
+        },
+        "difficulty": {
+          "label": "easy",
+          "estimatedScore": 38,
+          "metricsVersion": "estimate-1",
+          "metrics": {
+            "nodes": 4,
+            "backtracks": 0,
+            "forcedMoves": 3,
+            "branchingPoints": 0,
+            "maxDepth": 3,
+            "elapsedMs": 2.2304169999999885,
+            "initialPlacements": {
+              "B": 20,
+              "C": 5,
+              "F": 1
+            },
+            "rotationDiversity": 1,
+            "reflectionEnabled": false
+          }
+        },
+        "validation": {
+          "status": "complete",
+          "solutionCount": 1,
+          "countIsExact": true,
+          "classification": "unique",
+          "symmetryPolicy": "board-symmetries-count-separately",
+          "engineVersion": "1.0.0"
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "level-361a0326",
+        "revision": 1,
+        "order": 1,
+        "kind": "rectangle",
+        "pieceSetId": "studio-rectangle",
+        "pieceSetVersion": 1,
+        "pieceIds": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "board": {
+          "width": 6,
+          "height": 5,
+          "mask": [
+            "111111",
+            "111111",
+            "111111",
+            "111111",
+            "111111"
+          ]
+        },
+        "rules": {
+          "allowRotations": true,
+          "allowReflections": false,
+          "solutionPolicy": "unique"
+        },
+        "fixedPlacements": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;1,0",
+            "origin": [
+              1,
+              0
+            ],
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "3,0;2,1;3,1;0,2;1,2;2,2;3,2",
+            "origin": [
+              0,
+              0
+            ],
+            "cells": [
+              [
+                3,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "0,0;1,0;0,1;1,1;2,1",
+            "origin": [
+              0,
+              3
+            ],
+            "cells": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          }
+        ],
+        "referenceSolution": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;1,0",
+            "origin": [
+              1,
+              0
+            ],
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "3,0;2,1;3,1;0,2;1,2;2,2;3,2",
+            "origin": [
+              0,
+              0
+            ],
+            "cells": [
+              [
+                3,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "0,0;1,0;0,1;1,1;2,1",
+            "origin": [
+              0,
+              3
+            ],
+            "cells": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "B",
+            "orientationKey": "0,0;0,1;1,1",
+            "origin": [
+              0,
+              0
+            ],
+            "cells": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "pieceId": "C",
+            "orientationKey": "0,0;1,0;1,1;2,1",
+            "origin": [
+              2,
+              3
+            ],
+            "cells": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "F",
+            "orientationKey": "0,0;1,0;0,1;1,1;0,2;1,2;0,3;1,3;1,4",
+            "origin": [
+              4,
+              0
+            ],
+            "cells": [
+              [
+                4,
+                0
+              ],
+              [
+                5,
+                0
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ]
+            ]
+          }
+        ],
+        "generation": {
+          "seed": "demo-rectangle-2026",
+          "fixedCount": 3,
+          "nodeLimit": 500000,
+          "attemptLimit": 30,
+          "timeLimit": 30000,
+          "policy": "unique",
+          "track": "medium"
+        },
+        "difficulty": {
+          "label": "medium",
+          "estimatedScore": 41,
+          "metricsVersion": "estimate-1",
+          "metrics": {
+            "nodes": 4,
+            "backtracks": 0,
+            "forcedMoves": 3,
+            "branchingPoints": 0,
+            "maxDepth": 3,
+            "elapsedMs": 2.873583999999994,
+            "initialPlacements": {
+              "B": 23,
+              "C": 6,
+              "F": 2
+            },
+            "rotationDiversity": 2,
+            "reflectionEnabled": false
+          }
+        },
+        "validation": {
+          "status": "complete",
+          "solutionCount": 1,
+          "countIsExact": true,
+          "classification": "unique",
+          "symmetryPolicy": "board-symmetries-count-separately",
+          "engineVersion": "1.0.0"
+        }
+      },
+      {
+        "id": "level-aea70f3e",
+        "revision": 1,
+        "order": 2,
+        "kind": "silhouette",
+        "pieceSetId": "studio-cat",
+        "pieceSetVersion": 1,
+        "pieceIds": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "board": {
+          "width": 7,
+          "height": 7,
+          "mask": [
+            "0100010",
+            "0111110",
+            "0111110",
+            "0011100",
+            "0011101",
+            "0111111",
+            "0111110"
+          ],
+          "templateId": "cat",
+          "shapeLabel": "Kedi"
+        },
+        "rules": {
+          "allowRotations": true,
+          "allowReflections": false,
+          "solutionPolicy": "unique"
+        },
+        "fixedPlacements": [
+          {
+            "pieceId": "C",
+            "orientationKey": "1,0;0,1;1,1;2,1",
+            "origin": [
+              1,
+              1
+            ],
+            "cells": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "2,0;0,1;1,1;2,1;1,2;2,2;1,3",
+            "origin": [
+              3,
+              0
+            ],
+            "cells": [
+              [
+                5,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          },
+          {
+            "pieceId": "F",
+            "orientationKey": "2,0;3,0;0,1;1,1;2,1;0,2;1,2;2,2;3,2",
+            "origin": [
+              1,
+              4
+            ],
+            "cells": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          }
+        ],
+        "referenceSolution": [
+          {
+            "pieceId": "C",
+            "orientationKey": "1,0;0,1;1,1;2,1",
+            "origin": [
+              1,
+              1
+            ],
+            "cells": [
+              [
+                2,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "2,0;0,1;1,1;2,1;1,2;2,2;1,3",
+            "origin": [
+              3,
+              0
+            ],
+            "cells": [
+              [
+                5,
+                0
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          },
+          {
+            "pieceId": "F",
+            "orientationKey": "2,0;3,0;0,1;1,1;2,1;0,2;1,2;2,2;3,2",
+            "origin": [
+              1,
+              4
+            ],
+            "cells": [
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          },
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;0,1",
+            "origin": [
+              1,
+              0
+            ],
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          },
+          {
+            "pieceId": "B",
+            "orientationKey": "0,0;1,0;0,1",
+            "origin": [
+              2,
+              3
+            ],
+            "cells": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "2,0;0,1;1,1;2,1;1,2",
+            "origin": [
+              4,
+              4
+            ],
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                5,
+                6
+              ]
+            ]
+          }
+        ],
+        "generation": {
+          "seed": "demo-cat-2026",
+          "fixedCount": 3,
+          "nodeLimit": 500000,
+          "attemptLimit": 30,
+          "timeLimit": 30000,
+          "policy": "unique",
+          "track": "medium"
+        },
+        "difficulty": {
+          "label": "medium",
+          "estimatedScore": 39,
+          "metricsVersion": "estimate-1",
+          "metrics": {
+            "nodes": 4,
+            "backtracks": 0,
+            "forcedMoves": 3,
+            "branchingPoints": 0,
+            "maxDepth": 3,
+            "elapsedMs": 2.110832999999957,
+            "initialPlacements": {
+              "A": 7,
+              "B": 4,
+              "D": 1
+            },
+            "rotationDiversity": 2,
+            "reflectionEnabled": false
+          }
+        },
+        "validation": {
+          "status": "complete",
+          "solutionCount": 1,
+          "countIsExact": true,
+          "classification": "unique",
+          "symmetryPolicy": "board-symmetries-count-separately",
+          "engineVersion": "1.0.0"
+        }
+      },
+      {
+        "id": "level-c8e06f04",
+        "revision": 1,
+        "order": 3,
+        "kind": "silhouette",
+        "pieceSetId": "studio-heart",
+        "pieceSetVersion": 1,
+        "pieceIds": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "board": {
+          "width": 8,
+          "height": 7,
+          "mask": [
+            "01100110",
+            "11111111",
+            "11111111",
+            "11111111",
+            "01111110",
+            "00111100",
+            "00011000"
+          ],
+          "templateId": "heart",
+          "shapeLabel": "Kalp"
+        },
+        "rules": {
+          "allowRotations": true,
+          "allowReflections": false,
+          "solutionPolicy": "unique"
+        },
+        "fixedPlacements": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;0,1",
+            "origin": [
+              4,
+              2
+            ],
+            "cells": [
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          },
+          {
+            "pieceId": "B",
+            "orientationKey": "0,0;0,1;1,1",
+            "origin": [
+              3,
+              5
+            ],
+            "cells": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          },
+          {
+            "pieceId": "C",
+            "orientationKey": "0,0;1,0;1,1;1,2",
+            "origin": [
+              5,
+              0
+            ],
+            "cells": [
+              [
+                5,
+                0
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ]
+            ]
+          }
+        ],
+        "referenceSolution": [
+          {
+            "pieceId": "A",
+            "orientationKey": "0,0;0,1",
+            "origin": [
+              4,
+              2
+            ],
+            "cells": [
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          },
+          {
+            "pieceId": "B",
+            "orientationKey": "0,0;0,1;1,1",
+            "origin": [
+              3,
+              5
+            ],
+            "cells": [
+              [
+                3,
+                5
+              ],
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                6
+              ]
+            ]
+          },
+          {
+            "pieceId": "C",
+            "orientationKey": "0,0;1,0;1,1;1,2",
+            "origin": [
+              5,
+              0
+            ],
+            "cells": [
+              [
+                5,
+                0
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                6,
+                1
+              ],
+              [
+                6,
+                2
+              ]
+            ]
+          },
+          {
+            "pieceId": "F",
+            "orientationKey": "1,0;2,0;0,1;1,1;2,1;3,1;4,1;5,1;3,2;5,2;3,3;5,3;2,4;3,4;4,4;5,4;2,5;4,5;5,5",
+            "origin": [
+              0,
+              0
+            ],
+            "cells": [
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                1
+              ],
+              [
+                5,
+                1
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                5,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                5,
+                3
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                2,
+                5
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                5
+              ]
+            ]
+          },
+          {
+            "pieceId": "D",
+            "orientationKey": "1,0;1,1;0,2;1,2;0,3",
+            "origin": [
+              6,
+              1
+            ],
+            "cells": [
+              [
+                7,
+                1
+              ],
+              [
+                7,
+                2
+              ],
+              [
+                6,
+                3
+              ],
+              [
+                7,
+                3
+              ],
+              [
+                6,
+                4
+              ]
+            ]
+          },
+          {
+            "pieceId": "E",
+            "orientationKey": "0,0;1,0;2,0;0,1;1,1;2,1;1,2",
+            "origin": [
+              0,
+              2
+            ],
+            "cells": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "generation": {
+          "seed": "demo-heart-2026",
+          "fixedCount": 3,
+          "nodeLimit": 500000,
+          "attemptLimit": 30,
+          "timeLimit": 30000,
+          "policy": "unique",
+          "track": "medium"
+        },
+        "difficulty": {
+          "label": "medium",
+          "estimatedScore": 40,
+          "metricsVersion": "estimate-1",
+          "metrics": {
+            "nodes": 4,
+            "backtracks": 0,
+            "forcedMoves": 3,
+            "branchingPoints": 0,
+            "maxDepth": 3,
+            "elapsedMs": 4.851540999999997,
+            "initialPlacements": {
+              "D": 23,
+              "E": 19,
+              "F": 1
+            },
+            "rotationDiversity": 1,
+            "reflectionEnabled": false
+          }
+        },
+        "validation": {
+          "status": "complete",
+          "solutionCount": 1,
+          "countIsExact": true,
+          "classification": "unique",
+          "symmetryPolicy": "board-symmetries-count-separately",
+          "engineVersion": "1.0.0"
+        }
+      }
+    ],
+    "hard": [],
+    "expert": []
+  }
+}

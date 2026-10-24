@@ -1,0 +1,17 @@
+{
+  "attempt": 863,
+  "accepted": 830,
+  "requested": 830,
+  "counts": {
+    "baby": 30,
+    "easy": 100,
+    "medium": 200,
+    "hard": 250,
+    "expert": 250
+  },
+  "rejected": {
+    "Adayın tahmini hattı medium; hedef easy. Sabit parça hedefini değiştirin.": 8,
+    "Yinelenen bölüm": 25
+  },
+  "elapsed": 52298.722208
+}

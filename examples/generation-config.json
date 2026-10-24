@@ -1,0 +1,13 @@
+{
+  "boardId": "rectangle",
+  "count": 1,
+  "settings": {
+    "seed": "demo-rectangle-2026",
+    "fixedCount": 3,
+    "nodeLimit": 500000,
+    "attemptLimit": 30,
+    "timeLimit": 30000,
+    "policy": "unique",
+    "track": "medium"
+  }
+}
